@@ -1,0 +1,1719 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #0A210F;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 1100px;
+}
+
+nav {
+  background: #0A210F;
+  padding: 10px 0;
+}
+
+.innav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.innav img {
+  height: 100%;
+}
+.innav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-basis: 400px;
+  justify-content: space-between;
+}
+.innav ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.innav ul a:hover {
+  text-decoration: underline;
+}
+
+header {
+  color: white;
+  background-image: url(../main/headerbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 700px;
+  margin-bottom: 50px;
+}
+header p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 100px;
+}
+header span {
+  color: #F0B92C;
+}
+
+.preface {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 700px;
+}
+.preface .title {
+  max-width: 50%;
+}
+.preface .title h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.preface .title p {
+  font-size: 25px;
+  font-weight: 500;
+}
+.preface form {
+  width: 500px;
+  min-height: 350px;
+  background-color: #0a210fb6;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.preface form h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.preface form input[type=text],
+.preface form input[type=password],
+.preface form input[type=tel],
+.preface form input[type=number],
+.preface form select,
+.preface form textarea {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 7px;
+  font-size: 17px;
+  color: white;
+}
+.preface form ::placeholder {
+  color: white;
+  font-size: 17px;
+}
+.preface form .time {
+  display: flex;
+  justify-content: space-between;
+}
+.preface form .when {
+  width: 47%;
+}
+.preface form .when select {
+  -webkit-appearance: none;
+          appearance: none;
+}
+.preface form .when option {
+  color: black;
+  padding: 10px;
+}
+.preface form .days {
+  width: 47%;
+}
+.preface form button {
+  background: #F0B92C;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  border: 1px solid #F0B92C;
+  border-radius: 5px;
+  height: 40px;
+}
+.preface form button:active {
+  background: transparent;
+  color: #F0B92C;
+}
+
+.headerbg {
+  background: linear-gradient(#ffffff00, #0a210f);
+  min-height: 900px;
+}
+
+.polflex {
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.polflex .polhead h2 {
+  color: #F0B92C;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.polflex .polhead p {
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+}
+.polflex a {
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 10px 40px;
+  background-color: #F0B92C;
+  border: 1px solid #F0B92C;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.polflex a:active {
+  background: transparent;
+  color: #F0B92C;
+}
+.polflex .infolinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.polflex .infolinks .infitem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 20px 30px;
+}
+.polflex .infolinks .infitem:hover p {
+  opacity: 1;
+  transition: 1s;
+}
+.polflex .infolinks .infitem i {
+  margin-left: 10px;
+}
+.polflex .infolinks .infitem a {
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.polflex .infolinks .infitem p {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  opacity: 0;
+  transition: 1s;
+}
+.polflex .infolinks .infitem:first-child {
+  background-image: url(../main/mountains.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 520px;
+  height: 270px;
+}
+.polflex .infolinks .infitem:last-child {
+  background-image: url(../main/zakatpalatka.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 520px;
+  height: 270px;
+}
+
+.instructor {
+  margin: 100px 0;
+}
+
+.flexgid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 250px;
+}
+.flexgid h2 {
+  color: #F0B92C;
+  font-weight: 600;
+  font-size: 40px;
+}
+.flexgid p {
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+}
+.flexgid a {
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 10px 90px;
+  background-color: #F0B92C;
+  border: 1px solid #F0B92C;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.flexgid a:active {
+  background: transparent;
+  color: #F0B92C;
+}
+
+.flexshop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+.flexshop .shopitem {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 204px;
+  color: white;
+  line-height: 1.5;
+}
+.flexshop .shopitem .scale {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  width: 203px;
+}
+.flexshop .shopitem .scale img {
+  width: 203px;
+  transition: 1s;
+  display: block;
+}
+.flexshop .shopitem .scale img:hover {
+  transform: scale(1.2);
+}
+.flexshop .shopitem .price {
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.flexshop .shopitem .shoptext {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 140px;
+}
+
+.shop {
+  margin-bottom: 80px;
+}
+.shop h2 {
+  color: #F0B92C;
+  font-weight: 600;
+  font-size: 40px;
+}
+.shop .shoplink {
+  text-align: center;
+}
+.shop a {
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 10px 40px;
+  background-color: #F0B92C;
+  border: 1px solid #F0B92C;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.shop a:active {
+  background: transparent;
+  color: #F0B92C;
+}
+
+.company {
+  margin-bottom: 80px;
+}
+
+.findcomp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.findcomp .title {
+  max-width: 50%;
+  line-height: 1.5;
+}
+.findcomp .title h2 {
+  color: #F0B92C;
+  font-weight: 600;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.findcomp .title p {
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+}
+.findcomp form {
+  width: 500px;
+  min-height: 350px;
+  background-color: #091E0D;
+  padding: 30px;
+  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.384);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.findcomp form h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+.findcomp form input[type=text],
+.findcomp form input[type=password],
+.findcomp form input[type=tel],
+.findcomp form input[type=number],
+.findcomp form select {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 7px;
+  font-size: 17px;
+  color: white;
+  resize: none;
+}
+.findcomp form ::placeholder {
+  color: white;
+  font-size: 17px;
+}
+.findcomp form .person {
+  display: flex;
+  justify-content: space-between;
+}
+.findcomp form .age {
+  width: 47%;
+}
+.findcomp form .sex {
+  width: 47%;
+}
+.findcomp form .sex select {
+  -webkit-appearance: none;
+          appearance: none;
+}
+.findcomp form .sex option {
+  color: black;
+  padding: 10px;
+}
+.findcomp form button {
+  background: #F0B92C;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  border: 1px solid #F0B92C;
+  border-radius: 5px;
+  height: 40px;
+}
+.findcomp form button:active {
+  background: transparent;
+  color: #F0B92C;
+}
+
+.blog {
+  margin: 120px 0;
+}
+.blog h2 {
+  color: #F0B92C;
+  font-size: 48px;
+  font-weight: 600;
+}
+.blog .inblog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.blog .inblog .blogitem {
+  max-width: 330px;
+  min-height: 352px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.blog .inblog .blogitem:hover p {
+  opacity: 1;
+  transition: 1s;
+}
+.blog .inblog .blogitem a {
+  text-decoration: none;
+}
+.blog .inblog .blogitem p {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  max-width: 260px;
+  opacity: 0;
+  transition: 1s;
+}
+.blog .inblog .blogitem:first-child {
+  background-image: url(../main/leaves.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.blog .inblog .blogitem:nth-child(2) {
+  background-image: url(../main/woodguitar.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.blog .inblog .blogitem:last-child {
+  background-image: url(../main/fire.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.music {
+  margin: 100px;
+}
+.music h2 {
+  color: #F0B92C;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.playlists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.playlists .musitem {
+  width: 190px;
+  height: 310px;
+  border: 1px white solid;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  color: white;
+}
+.playlists .musitem .scale {
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+.playlists .musitem .scale img {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  transition: 1s;
+  display: block;
+}
+.playlists .musitem .scale img:hover {
+  transform: scale(1.2);
+}
+.playlists .musitem h6 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+.playlists .musitem p {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.playlists .musitem .mustext {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90px;
+  margin: 10px;
+}
+
+footer {
+  padding: 100px 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.links a {
+  color: white;
+  text-decoration: none;
+}
+.links p {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+.links span {
+  color: #F0B92C;
+  font-size: 18px;
+  font-weight: 500;
+}
+.links .call {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-height: 70px;
+}
+.links .socnet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+}
+.links .socnet i {
+  color: white;
+  font-size: 25px;
+  margin: 0 5px;
+}
+.links .office {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+
+  header {
+    min-height: 670px;
+    margin-bottom: none;
+  }
+  header p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0px;
+  }
+  header span {
+    color: #F0B92C;
+  }
+
+  .preface {
+    min-height: 650px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .preface .title {
+    max-width: 45%;
+  }
+  .preface .title h1 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  .preface .title p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  form {
+    max-width: 450px;
+  }
+
+  .polatka .infitem {
+    max-width: 420px;
+    min-height: 250px;
+  }
+  .polatka .infitem p {
+    font-size: 20px;
+  }
+
+  .flexshop .shopitem {
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 160px;
+    min-height: 230px;
+    color: white;
+    line-height: 1.5;
+  }
+  .flexshop .shopitem .scale {
+    width: 159px;
+  }
+  .flexshop .shopitem .price {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .flexshop .shopitem .shoptext {
+    padding: 10px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 110px;
+  }
+  .flexshop .shopitem img {
+    max-width: 159px;
+  }
+
+  .findcomp .title {
+    max-width: 45%;
+    line-height: 1.5;
+  }
+  .findcomp .title h2 {
+    color: #F0B92C;
+    font-weight: 600;
+    font-size: 37px;
+    margin-bottom: 20px;
+  }
+  .findcomp .title p {
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .findcomp form button {
+    font-size: 18px;
+  }
+
+  .blog .inblog .blogitem {
+    width: 280px;
+    min-height: 300px;
+  }
+  .blog .inblog .blogitem p {
+    color: white;
+    font-weight: 600;
+    font-size: 21px;
+    max-width: 220px;
+  }
+  .blog .inblog .blogitem:first-child {
+    background-image: url(../img/leaves.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .blog .inblog .blogitem:nth-child(2) {
+    background-image: url(../img/woodguitar.png);
+  }
+  .blog .inblog .blogitem:last-child {
+    background-image: url(../img/fire.png);
+  }
+
+  .playlists .musitem {
+    max-width: 140px;
+    height: 250px;
+    border: 1px white solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    color: white;
+  }
+  .playlists .musitem img {
+    margin-bottom: 10px;
+    max-width: 100%;
+    border: 1px transparent solid;
+    border-radius: 20px;
+  }
+  .playlists .musitem h6 {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .playlists .musitem p {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .playlists .musitem .mustext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px;
+    font-size: 13px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .innav ul {
+    flex-basis: 330px;
+  }
+  .innav ul a {
+    font-size: 17px;
+  }
+
+  header {
+    height: 600px;
+    margin-bottom: 150px;
+  }
+  header p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0px;
+  }
+
+  .preface {
+    min-height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .preface .title {
+    max-width: 45%;
+  }
+  .preface .title h1 {
+    font-size: 29px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  .preface .title p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  form {
+    max-width: 350px;
+  }
+
+  .polatka {
+    height: 600px;
+  }
+  .polatka .polflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 600px;
+  }
+  .polatka .polflex .infolinks .infitem {
+    max-width: 340px;
+    height: 200px;
+  }
+  .polatka .polflex .infolinks .infitem p {
+    font-size: 20px;
+    opacity: 1;
+  }
+  .polatka .polflex .polhead {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .polatka .polflex .polhead h2 {
+    color: #F0B92C;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .polatka .polflex .polhead p {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+  }
+  .polatka .polflex a {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 40px;
+    background-color: #F0B92C;
+    border: 1px solid #F0B92C;
+    border-radius: 10px;
+  }
+
+  .instructor {
+    margin: 100px 0;
+  }
+  .instructor .flexgid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 250px;
+  }
+  .instructor .flexgid h2 {
+    font-size: 35px;
+  }
+  .instructor .flexgid p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .flexshop .shopitem {
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 120px;
+    min-height: 200px;
+    color: white;
+    line-height: 1.5;
+  }
+  .flexshop .shopitem .scale {
+    width: 119px;
+  }
+  .flexshop .shopitem .price {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .flexshop .shopitem .shoptext {
+    padding: 10px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 110px;
+  }
+  .flexshop .shopitem img {
+    max-width: 119px;
+  }
+
+  .findcomp .title {
+    max-width: 45%;
+    line-height: 1.5;
+  }
+  .findcomp .title h2 {
+    color: #F0B92C;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .findcomp .title p {
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .findcomp form button {
+    font-size: 16px;
+  }
+
+  .blog .inblog .blogitem {
+    width: 220px;
+    min-height: 240px;
+  }
+  .blog .inblog .blogitem p {
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    max-width: 220px;
+    opacity: 1;
+  }
+
+  .playlists .musitem {
+    max-width: 140px;
+    height: 240px;
+    border: 1px white solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    color: white;
+  }
+  .playlists .musitem:last-child {
+    display: none;
+  }
+  .playlists .musitem img {
+    margin-bottom: 10px;
+    max-width: 100%;
+    border: 1px transparent solid;
+    border-radius: 20px;
+  }
+  .playlists .musitem h6 {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .playlists .musitem p {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .playlists .musitem .mustext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 80px;
+  }
+
+  footer {
+    padding: 100px 0;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .links p {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .links span {
+    color: #F0B92C;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .links .call {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-height: 70px;
+  }
+  .links .socnet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+  }
+  .links .socnet i {
+    color: white;
+    font-size: 20px;
+    margin: 0 5px;
+  }
+  .links .office {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .innav img {
+    height: 100%;
+  }
+  .innav ul {
+    flex-basis: 200px;
+  }
+  .innav ul a {
+    font-size: 13px;
+  }
+
+  header {
+    min-height: 810px;
+    margin-bottom: 150px;
+  }
+  header p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0px;
+    text-align: center;
+  }
+  header .headerbg {
+    background: linear-gradient(#ffffff00, #0a210f);
+    min-height: 810px;
+  }
+
+  .preface {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .preface .title {
+    max-width: 100%;
+  }
+  .preface .title h1 {
+    font-size: 29px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .preface .title p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .preface form h4 {
+    text-align: center;
+  }
+  .preface form button {
+    font-size: 16px;
+  }
+
+  .polatka {
+    min-height: 900px;
+  }
+  .polatka .polflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 900px;
+  }
+  .polatka .polflex .infolinks {
+    min-height: 550px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .polatka .polflex .infolinks .infitem {
+    max-width: 340px;
+    height: 200px;
+  }
+  .polatka .polflex .infolinks .infitem p {
+    font-size: 20px;
+    opacity: 1;
+  }
+  .polatka .polflex .polhead {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .polatka .polflex .polhead h2 {
+    color: #F0B92C;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .polatka .polflex .polhead p {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }
+  .polatka .polflex a {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 30px;
+    background-color: #F0B92C;
+    border: 1px solid #F0B92C;
+    border-radius: 10px;
+  }
+
+  .instructor {
+    margin: 100px 0;
+  }
+  .instructor .flexgid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 250px;
+  }
+  .instructor .flexgid h2 {
+    font-size: 32px;
+  }
+  .instructor .flexgid p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .instructor .flexgid a {
+    font-size: 16px;
+    padding: 10px 50px;
+  }
+
+  .shop {
+    margin-bottom: 80px;
+  }
+  .shop h2 {
+    text-align: center;
+    font-size: 38px;
+  }
+  .shop a {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+  .shop .flexshop {
+    justify-content: flex-start;
+  }
+  .shop .flexshop .shopitem {
+    margin-bottom: 15px;
+    margin-right: 15px;
+    max-width: 110px;
+  }
+  .shop .flexshop .shopitem .scale {
+    width: 109px;
+  }
+  .shop .flexshop .shopitem img {
+    width: 109px;
+  }
+
+  .findcomp {
+    flex-direction: column;
+  }
+  .findcomp .title {
+    max-width: 100%;
+    line-height: 1.5;
+  }
+  .findcomp .title h2 {
+    color: #F0B92C;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .findcomp .title p {
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+  }
+  .findcomp form h4 {
+    text-align: center;
+  }
+  .findcomp form button {
+    font-size: 16px;
+  }
+
+  .blog h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+  .blog .inblog {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog .inblog .blogitem {
+    width: 220px;
+    min-height: 240px;
+    margin-bottom: 20px;
+  }
+  .blog .inblog .blogitem p {
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    max-width: 220px;
+    opacity: 1;
+  }
+
+  .music {
+    margin: 0;
+  }
+  .music h2 {
+    text-align: center;
+  }
+  .music .playlists {
+    justify-content: space-around;
+  }
+  .music .playlists .musitem {
+    max-width: 130px;
+    height: 250px;
+    border: 1px white solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    margin-bottom: 50px;
+  }
+  .music .playlists .musitem:last-child {
+    display: none;
+  }
+
+  footer {
+    padding: 100px 0;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+  }
+  .links p {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .links span {
+    color: #F0B92C;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .links .call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+  }
+  .links .socnet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+  }
+  .links .socnet i {
+    color: white;
+    font-size: 20px;
+    margin: 0 5px;
+  }
+  .links .office {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 350px;
+  }
+
+  .innav img {
+    width: 122px;
+    height: 100%;
+  }
+  .innav ul {
+    flex-basis: 200px;
+  }
+  .innav ul a {
+    font-size: 13px;
+  }
+
+  .polatka {
+    min-height: 900px;
+  }
+  .polatka .polflex .infolinks .infitem p {
+    opacity: 1;
+  }
+
+  .shop {
+    margin-bottom: 80px;
+  }
+  .shop h2 {
+    text-align: center;
+    font-size: 38px;
+  }
+  .shop a {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+  .shop .flexshop {
+    justify-content: space-evenly;
+  }
+  .shop .flexshop .shopitem {
+    margin-bottom: 15px;
+  }
+  .shop .flexshop .shopitem:last-child {
+    display: none;
+  }
+
+  .findcomp {
+    flex-direction: column;
+  }
+  .findcomp .title {
+    max-width: 100%;
+    line-height: 1.5;
+  }
+  .findcomp .title h2 {
+    color: #F0B92C;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .findcomp .title p {
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+  }
+  .findcomp form h4 {
+    text-align: center;
+  }
+  .findcomp form button {
+    font-size: 16px;
+  }
+
+  .blog h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+  .blog .inblog {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog .inblog .blogitem {
+    width: 220px;
+    min-height: 240px;
+    margin-bottom: 20px;
+  }
+  .blog .inblog .blogitem p {
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    max-width: 220px;
+    opacity: 1;
+  }
+
+  .music {
+    margin: 0;
+  }
+  .music .playlists {
+    justify-content: space-around;
+  }
+  .music .playlists .musitem {
+    max-width: 130px;
+    height: 250px;
+    border: 1px white solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    margin-bottom: 40px;
+  }
+
+  footer {
+    padding: 100px 0;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+  }
+  .links p {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .links span {
+    color: #F0B92C;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .links .call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+  }
+  .links .socnet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+  }
+  .links .socnet i {
+    color: white;
+    font-size: 20px;
+    margin: 0 5px;
+  }
+  .links .office {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 290px;
+  }
+
+  .innav img {
+    width: 132px;
+    height: 100%;
+  }
+  .innav ul {
+    flex-basis: 110px;
+    flex-wrap: wrap;
+  }
+  .innav ul a {
+    font-size: 13px;
+  }
+
+  header {
+    min-height: 810px;
+    margin-bottom: 150px;
+  }
+  header p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0px;
+    text-align: center;
+  }
+  header .headerbg {
+    background: linear-gradient(#ffffff00, #0a210f);
+    min-height: 810px;
+  }
+
+  .preface {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .preface .title {
+    max-width: 100%;
+  }
+  .preface .title h1 {
+    font-size: 29px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .preface .title p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .preface form {
+    max-width: 310px;
+  }
+  .preface form h4 {
+    text-align: center;
+  }
+  .preface form button {
+    font-size: 16px;
+  }
+
+  .polatka {
+    min-height: 900px;
+  }
+  .polatka .polflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 900px;
+  }
+  .polatka .polflex .infolinks {
+    min-height: 550px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .polatka .polflex .infolinks .infitem {
+    max-width: 290px;
+    height: 200px;
+  }
+  .polatka .polflex .infolinks .infitem p {
+    font-size: 19px;
+    opacity: 1;
+  }
+  .polatka .polflex .polhead {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .polatka .polflex .polhead h2 {
+    color: #F0B92C;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .polatka .polflex .polhead p {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }
+  .polatka .polflex a {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 30px;
+    background-color: #F0B92C;
+    border: 1px solid #F0B92C;
+    border-radius: 10px;
+  }
+
+  .instructor {
+    margin: 100px 0;
+  }
+  .instructor .flexgid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 250px;
+  }
+  .instructor .flexgid h2 {
+    font-size: 32px;
+  }
+  .instructor .flexgid p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .instructor .flexgid a {
+    font-size: 16px;
+    padding: 10px 50px;
+  }
+
+  .shop {
+    margin-bottom: 80px;
+  }
+  .shop h2 {
+    text-align: center;
+    font-size: 38px;
+  }
+  .shop a {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+  .shop .flexshop .shopitem {
+    margin-bottom: 15px;
+  }
+
+  .findcomp {
+    flex-direction: column;
+  }
+  .findcomp .title {
+    max-width: 100%;
+    line-height: 1.5;
+  }
+  .findcomp .title h2 {
+    color: #F0B92C;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .findcomp .title p {
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+  }
+  .findcomp form {
+    max-width: 310px;
+  }
+  .findcomp form h4 {
+    text-align: center;
+  }
+  .findcomp form button {
+    font-size: 16px;
+  }
+
+  .blog h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+  .blog .inblog {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog .inblog .blogitem {
+    width: 220px;
+    min-height: 240px;
+    margin-bottom: 20px;
+  }
+  .blog .inblog .blogitem p {
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    max-width: 220px;
+    opacity: 1;
+  }
+
+  .music {
+    margin: 0;
+  }
+  .music h2 {
+    text-align: center;
+  }
+  .music .playlists {
+    justify-content: space-around;
+  }
+  .music .playlists .musitem {
+    max-width: 120px;
+    height: 225px;
+    border: 1px white solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .music .playlists .musitem .mustext {
+    margin: 0;
+  }
+
+  footer {
+    padding: 100px 0;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+  }
+  .links p {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .links span {
+    color: #F0B92C;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .links .call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+  }
+  .links .socnet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+  }
+  .links .socnet i {
+    color: white;
+    font-size: 20px;
+    margin: 0 5px;
+  }
+  .links .office {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+  }
+}

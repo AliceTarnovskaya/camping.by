@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0 !important;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+body {
+  background-color: #0A210F;
+  font-family: "Montserrat", sans-serif;
+}
+
+.polflex {
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.polflex .polhead h2 {
+  color: #F0B92C;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.polflex .polhead p {
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+}
+.polflex button {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 40px;
+  background-color: #F0B92C;
+  border: 1px solid #F0B92C;
+  border-radius: 10px;
+}
+.polflex .infolinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.polflex .infolinks .infitem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 20px 30px;
+}
+.polflex .infolinks .infitem i {
+  margin-left: 10px;
+}
+.polflex .infolinks .infitem p {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.polflex .infolinks .infitem:first-child {
+  background-image: url(../img/mountains.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 570px;
+  height: 320px;
+}
+.polflex .infolinks .infitem:last-child {
+  background-image: url(../img/zakatpalatka.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 570px;
+  height: 320px;
+}
+
+.instructor {
+  margin: 100px 0;
+}
+
+.flexgid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 250px;
+}
+.flexgid h2 {
+  color: #F0B92C;
+  font-weight: 600;
+  font-size: 40px;
+}
+.flexgid p {
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+}
+.flexgid button {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 90px;
+  background-color: #F0B92C;
+  border: 1px solid #F0B92C;
+  border-radius: 10px;
+}
+
+.flexshop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.flexshop .shopitem {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 204px;
+  color: white;
+  line-height: 1.5;
+}
+.flexshop .shopitem .price {
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.flexshop .shopitem .shoptext {
+  padding: 15px;
+}
+
+.shop h2 {
+  color: #F0B92C;
+  font-weight: 600;
+  font-size: 40px;
+}
+.shop button {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 40px;
+  background-color: #F0B92C;
+  border: 1px solid #F0B92C;
+  border-radius: 10px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

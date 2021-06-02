@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #0A210F;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    background: #0A210F;
+    padding: 10px 0;
+}
+
+.innav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.innav img {
+    height: 100%;
+}
+.innav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-basis: 400px;
+    justify-content: space-between;
+   
+}
+.innav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+   
+}
+.innav ul a:hover {
+    text-decoration: underline;
+}
+
+/* Lifehacks page */
+
+section.lifehacks {
+    background: #0a210f;
+}
+.lifehacks__text {
+    color: #f0b92c;
+    padding: 20px 0;
+}
+
+.lifehacks img {
+    width: 100%;
+}
+.lifehacks__menu {
+    padding: 25px;
+}
+.lifehacks__menu li {
+    margin: 10px;
+    color: white;
+}
+
+.lifehacks__menu li::marker {
+    color: #f0b92c;
+}
+
+/* Places page */
+
+section.places {
+    background: #0a210f;
+}
+
+.places__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.places__item {
+    overflow: hidden;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.places__img {
+    object-fit: cover;
+    min-height: 100%;
+    width: 100%;
+}
+
+.places__title {
+    color: #f0b92c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.places h1 {
+    /* background:  #0a210f;  */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer {
+    padding: 100px 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.links a {
+    color: white;
+    text-decoration: none;
+}
+.links p {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.links span {
+    color: #F0B92C;
+    font-size: 18px;
+    font-weight: 500;
+}
+.links .call {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-height: 70px;
+}
+.links .socnet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+   
+}
+.socnet i {
+    color: white;
+    font-size: 25px;
+    margin: 0 5px;
+}
+.links  .office {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70px;
+}
+
+@media (max-width: 1024px) {
+  
+    .container {
+        max-width: 900px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .places__item {
+        width: 45%;
+    }
+    footer .links p {
+        font-size: 16px;
+    }
+    footer .links span{
+        font-size: 16px;
+    }
+    .container {
+        max-width: 700px;
+        
+    }
+
+    .places__row {
+        padding: 0 15px;
+    }
+   
+}
+@media (max-width: 480px) {
+    .places__item {
+        width: 100%;
+    }
+    .lifehacks{
+        padding: 0 15px;
+    }
+}
+
+
+@media (max-width: 425px){
+    
+
+    .container{
+        max-width: 390px;
+    }
+    .innav img{
+            height: 100%;
+        }
+    .innav ul {
+            flex-basis: 200px;
+    }
+    .innav ul a {
+        font-size: 13px;
+    }
+
+    
+    footer {
+        padding: 100px 0;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 200px;
+    }
+    .links p {
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .links span {
+        color: #F0B92C;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .links .call {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 50px;
+    }
+    .links .socnet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 50px;
+       
+    }
+
+    .links .socnet i {
+        color: white;
+        font-size: 20px;
+        margin: 0 5px;
+    }
+    .links .office {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 50px;
+    }
+}
+@media (max-width: 375px){
+    .container {
+        max-width: 350px;
+    }
+    img {
+        width: 122px;
+        height: 100%;
+    }
+    .innav ul {
+        flex-basis: 250px;
+        padding-left: 20px;
+        }
+    .innav ul a {
+        font-size: 13px;
+    }
+}
+@media (max-width: 320px){
+    .container {
+        max-width: 290px;
+    }
+    .innav img {
+            width: 132px;
+            height: 100%;
+        }
+
+    .innav ul {
+            flex-basis: 110px;
+            flex-wrap: wrap;
+        }
+    .innav ul a {
+            font-size: 13px;
+        }
+} 
