@@ -157,22 +157,33 @@ footer {
 }
 .links .call {
   display: flex;
+  flex-direction: row;
+  height: 80px;
+}
+.links .call .phone {
+  display: flex;
+  height: 80px;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: space-between;
-  min-height: 70px;
+  margin-left: 10px;
+}
+.links .call .phone p {
+  margin: 0;
 }
 .links .socnet {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 70px;
+  height: 80px;
 }
 .links .socnet i {
   color: white;
   font-size: 25px;
   margin: 0 5px;
+}
+.links .socnet a:hover i {
+  color: #F0B92C;
 }
 .links .office {
   display: flex;
@@ -181,7 +192,7 @@ footer {
   min-height: 70px;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .container {
     max-width: 900px;
   }
@@ -193,7 +204,7 @@ footer {
     max-width: 40%;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     max-width: 700px;
   }
@@ -211,7 +222,7 @@ footer {
     font-size: 15px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .gid-people__item {
     width: 100%;
   }
@@ -233,7 +244,56 @@ footer {
     padding: 0 50px;
   }
 }
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+  }
+  .links p {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .links span {
+    color: #F0B92C;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .links .call {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+  }
+  .links .call .phone {
+    justify-content: space-between;
+    height: inherit;
+  }
+  .links .socnet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+  }
+  .links .socnet i {
+    color: white;
+    font-size: 20px;
+    margin: 0 5px;
+  }
+  .links .office {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+  .links .office P {
+    margin: 0;
+  }
+
   .rules__row .rules__item {
     align-items: center;
   }
@@ -261,44 +321,47 @@ footer {
   footer {
     padding: 100px 0;
   }
-
-  .links {
+  footer .links {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     min-height: 200px;
   }
-  .links p {
+  footer .links p {
     color: white;
     font-size: 14px;
     font-weight: 500;
   }
-  .links span {
+  footer .links span {
     color: #F0B92C;
     font-size: 14px;
     font-weight: 500;
   }
-  .links .call {
+  footer .links .call {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 50px;
+  }
+  footer .links .call .phone {
+    justify-content: space-between;
+    min-height: inherit;
+  }
+  footer .links .socnet {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     min-height: 50px;
   }
-  .links .socnet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 50px;
-  }
-  .links .socnet i {
+  footer .links .socnet i {
     color: white;
     font-size: 20px;
     margin: 0 5px;
   }
-  .links .office {
+  footer .links .office {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -306,7 +369,7 @@ footer {
     min-height: 50px;
   }
 }
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
   .container {
     max-width: 350px;
   }
@@ -323,21 +386,29 @@ footer {
     font-size: 13px;
   }
 }
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .container {
     max-width: 290px;
   }
 
+  .innav {
+    display: block;
+  }
   .innav img {
-    width: 132px;
+    width: 122px;
     height: 100%;
   }
   .innav ul {
-    flex-basis: 110px;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
   }
-  .innav ul a {
-    font-size: 13px;
+  .innav ul li {
+    margin-right: 10px;
+  }
+  .innav ul li a {
+    font-size: 14px;
   }
 
   .gid-people__row img {
@@ -345,7 +416,7 @@ footer {
     height: 257px;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .gid-people__row .gid-people__item {
     max-width: 100%;
     display: flex;

@@ -39,7 +39,7 @@ nav {
             color: white;
             text-decoration: none;
             font-size: 18px;
-            &:hover {
+            &:hover, :active {
                 text-decoration: underline;
             }
         }
@@ -140,7 +140,7 @@ header {
             border: 1px solid #F0B92C;
             border-radius: 5px;
             height: 40px;
-            &:active {
+            &:hover, :active {
                 background: transparent;
                 color: #F0B92C;
             }
@@ -181,7 +181,7 @@ header {
         border: 1px solid #F0B92C;
         border-radius: 10px;
         text-decoration: none;
-        &:active {
+        &:hover, :active {
             background: transparent;
             color: #F0B92C;
         }
@@ -264,7 +264,7 @@ header {
         border: 1px solid #F0B92C;
         border-radius: 10px;
         text-decoration: none;
-        &:active {
+        &:hover, :active {
             background: transparent;
             color: #F0B92C;
         }
@@ -309,6 +309,20 @@ header {
             flex-direction: column;
             justify-content: space-between;
             min-height: 140px;
+            p{
+                a{
+                    background: none;
+                    text-decoration: none;
+                    color: white;
+                    border: none;
+                    padding: 0;
+                    font-weight: 500;
+                    font-size: 15px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
     }
 }
@@ -332,7 +346,7 @@ header {
         border: 1px solid #F0B92C;
         border-radius: 10px;
         text-decoration: none;
-        &:active {
+        &:hover, :active {
             background: transparent;
             color: #F0B92C;
         }
@@ -423,7 +437,7 @@ header {
             border: 1px solid #F0B92C;
             border-radius: 5px;
             height: 40px;
-            &:active {
+            &:hover, :active {
                 background: transparent;
                 color: #F0B92C;
             }
@@ -443,8 +457,6 @@ header {
         flex-direction: row;
         justify-content: space-between;
         margin: 40px 0;
-        
-            
             .blogitem {
                 max-width: 330px;
                 min-height: 352px;
@@ -573,10 +585,14 @@ footer {
     }
     .call {
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-between;
+        flex-direction: row;
         min-height: 70px;
+        .phone{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 10px;
+        }
     }
     .socnet {
         display: flex;
@@ -589,6 +605,11 @@ footer {
             font-size: 25px;
             margin: 0 5px;
         }
+        a{
+                &:hover i{
+                    color: #F0B92C;
+                }
+            }
     }
     .office {
         display: flex;
@@ -667,7 +688,7 @@ footer {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                min-height: 110px;
+                min-height: 140px;
             }
             img {
                 max-width: 159px;
@@ -891,6 +912,11 @@ footer {
                 flex-direction: column;
                 justify-content: space-between;
                 min-height: 110px;
+                p{
+                    a{
+                        font-size: 11px;
+                    }
+                }
             }
             img {
                 max-width: 119px;
@@ -936,7 +962,7 @@ footer {
     }
     .playlists {
         .musitem {
-            max-width: 140px;
+            max-width: 130px;
             height: 240px;
             border: 1px white solid;
             border-radius: 20px;
@@ -983,20 +1009,23 @@ footer {
         align-items: center;
         p {
             color: white;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 500;
         }
         span {
             color: #F0B92C;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 500;
         }
         .call {
             display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: space-between;
             min-height: 70px;
+            .phone{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-left: 10px;
+            }
         }
         .socnet {
             display: flex;
@@ -1008,7 +1037,9 @@ footer {
                 color: white;
                 font-size: 20px;
                 margin: 0 5px;
+                
             }
+            
         }
         .office {
             display: flex;
@@ -1021,6 +1052,10 @@ footer {
 
 @media screen and (max-width: 425px) {
     
+    .container{
+       max-width: 390px;
+    }
+
     .innav {
         img {
             height: 100%;
@@ -1034,7 +1069,7 @@ footer {
     }
     header {
         min-height: 810px;
-        margin-bottom: 150px;
+        margin-bottom: 80px;
         p {
             font-size: 16px;
             font-weight: 500;
@@ -1082,7 +1117,7 @@ footer {
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            min-height: 900px;
+            min-height: 950px;
             .infolinks {
                 min-height: 550px;
                 flex-direction: column;
@@ -1149,7 +1184,8 @@ footer {
         }
     }
     .shop {
-        margin-bottom: 80px;
+       
+        margin-bottom: 100px;
         h2 {
             text-align: center;
             font-size: 38px;
@@ -1159,11 +1195,16 @@ footer {
             padding: 10px 30px;
         }
         .flexshop {
-            justify-content: flex-start;
+            justify-content: space-around;
             .shopitem {
                 margin-bottom: 15px;
-                margin-right: 15px;
                 max-width: 110px;
+                &:nth-child(4){
+                    display: none;
+                }
+                &:nth-child(5){
+                    display: none;
+                }
                 .scale {
                     width: 109px;
                 }
@@ -1202,6 +1243,7 @@ footer {
         }
     }
     .blog {
+        margin: 0;
         h2 {
             font-size: 38px;
             text-align: center;
@@ -1224,15 +1266,15 @@ footer {
         }
     }
     .music {
-        margin: 0;
+        margin: 70px 0 0 0;
         h2 {
             text-align: center;
         }
         .playlists {
             justify-content: space-around;
             .musitem {
-                max-width: 130px;
-                height: 250px;
+                max-width: 120px;
+                height: 220px;
                 border: 1px white solid;
                 border-radius: 20px;
                 display: flex;
@@ -1242,15 +1284,16 @@ footer {
                 padding: 15px;
                 color: white;
                 margin-bottom: 50px;
+                &:nth-child(4){
+                    display: none;
+                }
                 &:last-child {
                     display: none;
                 }
             }
         }
     }
-    footer {
-        padding: 100px 0;
-    }
+    
     .links {
         display: flex;
         flex-direction: column;
@@ -1269,10 +1312,14 @@ footer {
         }
         .call {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: row;
+            align-items: flex-start;
             justify-content: space-between;
             min-height: 50px;
+            .phone{
+                justify-content: space-between;
+                min-height: inherit;
+            }
         }
         .socnet {
             display: flex;
@@ -1338,9 +1385,6 @@ footer {
             justify-content: space-evenly;
             .shopitem {
                 margin-bottom: 15px;
-                &:last-child {
-                    display: none;
-                }
             }
         }
     }
@@ -1410,12 +1454,13 @@ footer {
                 padding: 15px;
                 color: white;
                 margin-bottom: 40px;
+                &:nth-child(4){
+                    display: block;
+                }
             }
         }
     }
-    footer {
-        padding: 100px 0;
-    }
+  
     .links {
         display: flex;
         flex-direction: column;
@@ -1434,10 +1479,14 @@ footer {
         }
         .call {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: row;
+            align-items: flex-start;
             justify-content: space-between;
             min-height: 50px;
+            .phone{
+                justify-content: space-between;
+                min-height: inherit;
+            }
         }
         .socnet {
             display: flex;
@@ -1466,16 +1515,23 @@ footer {
         max-width: 290px;
     }
     .innav {
+        display: block;
         img {
-            width: 132px;
+            width: 122px;
             height: 100%;
+            
         }
         ul {
-            flex-basis: 110px;
+            justify-content: flex-start;
             flex-wrap: wrap;
-            a {
-                font-size: 13px;
+           
+            li{
+                margin-right: 10px;
+                a {
+                    font-size: 14px;
+                }
             }
+           
         }
     }
     header {
@@ -1608,6 +1664,9 @@ footer {
         .flexshop {
             .shopitem {
                 margin-bottom: 15px;
+                &:nth-child(4){
+                    display: block;
+                }
             }
         }
     }
@@ -1681,15 +1740,16 @@ footer {
                 padding: 15px;
                 color: white;
                 margin-bottom: 20px;
+                &:nth-child(4){
+                    display: block;
+                }
                 .mustext {
                     margin: 0;
                 }
             }
         }
     }
-    footer {
-        padding: 100px 0;
-    }
+   
     .links {
         display: flex;
         flex-direction: column;
@@ -1708,10 +1768,14 @@ footer {
         }
         .call {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: row;
+            align-items: flex-start;
             justify-content: space-between;
             min-height: 50px;
+            .phone{
+                justify-content: space-between;
+                min-height: inherit;
+            }
         }
         .socnet {
             display: flex;
